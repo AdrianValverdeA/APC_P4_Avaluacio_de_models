@@ -1,0 +1,51 @@
+diabetes.csv
+Pima Indians Diabetes Database
+
+ORIGEN
+Recollit pel National Institute of Diabetes and Digestive and Kidney Diseases (EUA).
+Distribuit a Kaggle com a "Pima Indians Diabetes Database".
+
+POBLACIO
+Totes les pacients son dones de 21 anys o mes, d'ascendencia pima. Aquesta restriccio
+forma part de la definicio del conjunt de dades i cal tenir-la present a l'hora de dir
+sobre quina poblacio es podrien fer servir els resultats.
+
+DIMENSIONS
+768 files (una per pacient) i 9 columnes: 8 variables mes la variable objectiu.
+
+COLUMNES
+
+Pregnancies
+    Nombre d'embarassos previs. Enter.
+
+Glucose
+    Concentracio de glucosa en plasma dues hores despres d'un test oral de tolerancia
+    a la glucosa. Enter, en mg/dL.
+
+BloodPressure
+    Pressio arterial diastolica. Enter, en mm Hg.
+
+SkinThickness
+    Gruix del plec cutani del triceps. Enter, en mm.
+
+Insulin
+    Insulina serica dues hores despres del test. Enter, en mu U/ml.
+
+BMI
+    Index de massa corporal, pes en kg dividit per l'alcada en metres al quadrat.
+    Decimal, en kg/m2.
+
+DiabetesPedigreeFunction
+    Funcio de pedigri de diabetis: un resum numeric dels antecedents de diabetis entre
+    els familiars de la pacient i del seu grau de parentiu. Decimal, sense unitats.
+
+Age
+    Edat de la pacient. Enter, en anys. Recorregut de 21 a 81.
+
+Outcome
+    Variable objectiu. 1 si la pacient va donar positiu en diabetis, 0 si no.
+    500 negatives i 268 positives.
+
+FORMAT
+CSV amb coma com a separador i punt com a separador decimal. La primera linia es la
+capcalera. Es llegeix amb pd.read_csv('diabetes.csv') des del directori de treball.
